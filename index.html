@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student registration syystem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- heading -->
+
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Efficiently manage student registrations with functionalities to add, edit, and delete student records.</p>
+    </header>
+
+    <!-- form  section -->
+     <main class="main-container"> 
+    <div class="container">
+        <!-- Section One: Registration Form -->
+
+        <section id="registration-form" class="form-section">
+            <h2>Register New Student</h2>
+ 
+    <form id="student-registration">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="stdent-name" name="student-name" placeholder="Enter name" required>
+
+        <label for="student-id">Student ID</label>
+        <input type="text" id="student-id" name="student-id" placeholder="Enter student ID" required>
+
+        <label for="email-id">Email ID</label>
+        <input type="email" id="email-id" name="email-id" placeholder="Enter email" required>
+        
+        <label for="contact-no" >Contact no:</label>
+        <input type="tel" id="contact-no" name="contact-no" placeholder="Enter contact number" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    </section>
+    </div>
+     
+    <!-- disply section -->
+      <div class="container2">  
+    <section id="studentlist" class="display-section">
+        <h2>Registered Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Email ID</th>
+                    <th>Contact No.</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="students-records">
+                <!-- Rows will be dynamically added here -->
+            <!-- Side by side buttons for edit and delete -->
+ 
+            </tbody>
+        </table>
+    </section>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

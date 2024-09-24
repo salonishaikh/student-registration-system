@@ -1,0 +1,152 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    
+}
+header{
+    padding:20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #38c659;
+    box-shadow:  5px 5px 5px  rgb(150, 154, 150);
+    transition: font-size 0.4s ease-in-out, color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
+}
+
+ 
+
+/* Hover effect for the header elements */
+header:hover h1 {
+  font-size: 42px; /* Make the header bigger */
+  color: #111110; /* Change color on hover */
+  text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.3); /* Subtle shadow effect */
+}
+
+
+
+  .main-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    padding: 20px;
+ }
+ .container{
+    flex:1;
+    margin-right: 20px;
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+ }
+ .container2{
+    flex:1;
+    background-color: white;
+    color:black;
+    padding:20px;
+    border-radius: 5px;
+ }
+ form{
+    display: flex;
+    flex-direction: column;
+ }
+ label, input, button{
+    margin:5px;
+    padding:5px;
+    border-radius: 10px;
+     text-decoration: none;
+     transition: all 0.3s ease-in-out;
+ }
+ input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  button{
+    margin-top: 20px;
+    cursor: pointer;
+ }
+ button:hover{
+    background-color: #3ad253;
+ }
+ .form-section{
+    background-color: white;
+    color:black;
+    border-radius: 20px;
+    height: 500px;
+    padding: 15px;
+    box-shadow:  5px 5px 5px 5px rgb(150, 154, 150);
+    border-color: #38c659;
+ }
+
+ .form-section h2{
+    text-align:center ;
+    font-size: 24px;
+    color: #333;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+ }
+ .form-section h2:hover {
+    font-size: 28px;
+    color: rgb(77, 199, 77);
+    text-shadow: 2px 2px 5px rgba(94, 240, 125, 0.3);
+  }
+ .display-section h2{
+    text-align: center;
+    margin-top: -0px;
+    font-size: 24px;
+    color: #333;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  }
+  
+  /* On hover, change the font size, color, or text-shadow for a smooth effect */
+  .display-section h2:hover {
+    font-size: 28px;
+    color: #28a745;
+    text-shadow: 2px 2px 5px rgba(40, 167, 69, 0.3); /* Subtle green shadow effect */
+  }
+  
+
+ 
+ .display-section{
+    background-color: white;
+    color: rgb(11, 11, 11);
+    margin-top: -17px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  5px 5px 5px 5px rgb(150, 154, 150);
+ }
+ /* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .container, .container2 {
+        margin: 0 0 20px 0;
+    }
+}
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    margin-right: 5px;
+    border-radius: 3px;
+     
+}
+
+.actions button.delete {
+    background-color: #dc3545;
+    
+}
+ 
